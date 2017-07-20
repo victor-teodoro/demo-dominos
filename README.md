@@ -8,19 +8,19 @@
 1. [Clone](https://github.com/stone-payments/pos-mamba-websdk-template) or [Download](https://github.com/stone-payments/pos-mamba-websdk-template/archive/master.zip) this repository
 2. Clone the [mamba-websdk](https://github.com/stone-payments/pos-mamba-websdk) into another folder
 3. Build the mamba-websdk (this step will be removed eventually)
-4. Use [npm link](https://docs.npmjs.com/cli/link) to link the mamba-websdk (this step will be removed when the project becomes public)
+4. Install the npm dependencies
+```bash
+npm install
+```
+5. Use [npm link](https://docs.npmjs.com/cli/link) to link the mamba-websdk (this step will be removed when the project becomes public)
 ```bash
 cd path/to/pos-mamba-websdk/mamba-websdk
-git checkout name-of-the-branch-to-use
+git checkout name-of-the-branch-to-use-on-the-mamba-websdk
 ... build the library ...
 
 npm link
 cd path/to/your/project
 npm link mamba-websdk
-```
-5. Install the npm dependencies
-```bash
-npm install
 ```
 6. Edit (or remove) your host ip on the package.json file. It's used mainly to test the project on the POS
 ```javascript
