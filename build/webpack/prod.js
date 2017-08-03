@@ -69,6 +69,25 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      include: /\.js$/,
+      compress: {
+        warnings: false,
+        dead_code: true,
+        drop_console: true,
+        unused: true,
+        if_return: true,
+        reduce_vars: true,
+        loops: true,
+        evaluate: true,
+        conditionals: true,
+        drop_debugger: true
+      },
+      output: {
+        comments: false
+      },
+      sourceMap: false
+    }),
     new CopyWebpackPlugin([
       {
         context: config.root,
