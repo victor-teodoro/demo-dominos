@@ -102,6 +102,13 @@ module.exports = {
         to: path.join(config.root, path.join(config.dist.root, config.src.assets))
       }
     ]),
+    new CopyWebpackPlugin([
+      {
+        context: path.join(config.root, config.lib.mambaWebSdk.assets),
+        from: '**/*',
+        to: path.join(config.root, path.join(config.dist.root, config.src.assets))
+      }
+    ]),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: config.src.indexHTML,

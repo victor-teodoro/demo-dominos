@@ -6,7 +6,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const eslintFormatter = require('eslint-friendly-formatter')
 const SassLintPlugin = require('sasslint-webpack-plugin')
-
+console.log('========================')
+console.log(path.join(config.root, config.lib.mambaWebSdk.assets))
 module.exports = {
   entry: path.join(config.root, config.src.indexJS),
   output: {
@@ -87,6 +88,13 @@ module.exports = {
         context: path.join(config.root, config.src.assets),
         from: '**/*',
         to: path.join(config.dist.root, config.src.assets)
+      }
+    ]),
+    new CopyWebpackPlugin([
+      {
+        context: path.join(config.root, config.lib.mambaWebSdk.assets),
+        from: '**/*',
+        to: path.join(config.root, path.join(config.dist.root, config.src.assets))
       }
     ]),
     new ExtractTextPlugin('test.css'),

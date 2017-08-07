@@ -12,6 +12,11 @@ let config = {
   dist: {
     root: 'dist',
     name: 'my-app'
+  },
+  lib: {
+    mambaWebSdk: {
+      assets: 'node_modules/mamba-websdk/dist/assets'
+    }
   }
 }
 
