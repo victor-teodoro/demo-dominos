@@ -14,8 +14,23 @@ module.exports = {
     path: path.join(config.root, config.dist.root),
     filename: config.dist.name + '.js'
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
+  },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        enforce: 'pre',
+        loader: 'tslint-loader',
+        options: {
+          extends: 'tslint-config-standard'
+        }
+      },
+      {
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader'
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
