@@ -82,6 +82,14 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    inline: true,
+    disableHostCheck: true,
+    host: '0.0.0.0',
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+  },
   plugins: [
     new CopyWebpackPlugin([
       {

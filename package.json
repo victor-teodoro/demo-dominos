@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "webpack-dev-server --config ./build/webpack/dev.js --host 172.16.3.56 --inline --open",
+    "dev": "webpack-dev-server --config ./build/webpack/dev.js --port 8080",
     "build": "npm run clean && webpack --config ./build/webpack/prod.js",
     "test": "standard --verbose | snazzy",
     "lint:js": "standard --fix ./src",

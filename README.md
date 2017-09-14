@@ -22,10 +22,7 @@ npm link
 cd path/to/your/project
 npm link mamba-websdk
 ```
-6. Edit (or remove) your host ip on the package.json file. It's used mainly to test the project on the POS
-```javascript
-"dev": "webpack-dev-server ... --host your-ip-here ...",
-```
+6. Open your browser at localhost:8080. To access it on the POS, use your local ip instead of localhost. To discover your local ip on Windows, open Command Prompt, type `ipconfig` and look for the `IPV4 Adress` field. On Linux and Mac, type `ifconfig` and look for the `inet addr` field.
 
 ## What's included
 - `npm run dev` - Development task
