@@ -6,8 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const eslintFormatter = require('eslint-friendly-formatter')
 const SassLintPlugin = require('sasslint-webpack-plugin')
-console.log('========================')
-console.log(path.join(config.root, config.lib.mambaWebSdk.assets))
+
 module.exports = {
   entry: path.join(config.root, config.src.indexJS),
   output: {
@@ -16,10 +15,23 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
     symlinks: false // See https://github.com/webpack/webpack/issues/811
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        enforce: 'pre',
+        loader: 'tslint-loader',
+        options: {
+          extends: 'tslint-config-standard'
+        }
+      },
+      {
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader'
+      },
       {
         test: /\.(js)$/,
         loader: 'eslint-loader',

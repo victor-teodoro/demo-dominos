@@ -6,19 +6,19 @@
 
 ## Usage
 1. [Clone](https://github.com/stone-payments/pos-mamba-websdk-template) or [Download](https://github.com/stone-payments/pos-mamba-websdk-template/archive/master.zip) this repository
-2. Clone the [mamba-websdk](https://github.com/stone-payments/pos-mamba-websdk) into another folder
-3. Build the mamba-websdk (this step will be removed eventually)
-4. Install the npm dependencies
+2. Clone the [mamba-websdk](https://github.com/stone-payments/pos-mamba-websdk/tree/master/mamba-websdk) into another folder
+3. Build the mamba-websdk (this step will be removed eventually). Please refer to the instructions at the [Readme file](https://github.com/stone-payments/pos-mamba-websdk/tree/master/mamba-websdk) then come back here.
+4. Install the template's npm dependencies
 ```bash
 npm install
 ```
-5. Use [npm link](https://docs.npmjs.com/cli/link) to link the mamba-websdk (this step will be removed when the project becomes public)
+5. Use [npm link](https://docs.npmjs.com/cli/link) to link the mamba-websdk (this step will be removed when the project becomes public). Please notice you must execute commands in different folders (on the websdk folder and on the template folder).
 ```bash
+# go to your mamba-websdk folder
 cd path/to/pos-mamba-websdk/mamba-websdk
-git checkout name-of-the-branch-to-use-on-the-mamba-websdk
-... build the library ...
-
 npm link
+
+# go to your template folder
 cd path/to/your/project
 npm link mamba-websdk
 ```
