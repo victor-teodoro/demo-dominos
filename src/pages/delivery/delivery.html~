@@ -1,0 +1,9 @@
+<div class="welcome">
+    <mb-navbar mb-title="Pedidos"></mb-navbar>
+
+    <mb-image mb-src="assets/Delivery.png" class="login-image"></mb-image>
+    
+    <div class="button-div">
+	<mb-button class="button" ref="button"></mb-button>
+    </div>
+</div>

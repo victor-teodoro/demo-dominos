@@ -33,16 +33,6 @@ module.exports = {
         loader: 'awesome-typescript-loader'
       },
       {
-        test: /\.(js)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        exclude: /node_modules/,
-        options: {
-          fix: false,
-          formatter: eslintFormatter
-        }
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'

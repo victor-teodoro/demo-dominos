@@ -7,14 +7,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "webpack-dev-server --config ./build/webpack/dev.js --port 8080",
-    "build": "npm run clean && webpack --config ./build/webpack/prod.js",
-    "test": "npm run test:unit && npm run test:lint",
-    "test:lint": "standard ./src ./test --verbose | snazzy && tslint ./src/**/*.ts ./test/**/*.ts && npm run lint:scss",
-    "test:unit": "mocha --compilers ts:ts-node/register --recursive test/unit",
-    "lint:js": "standard --fix ./src",
-    "lint:scss": "sass-lint ./src/**/*.scss --verbose",
-    "lint:ts": "tslint --fix ./src/**/*.ts ./test/**/*.ts",
-    "lint": "npm run lint:js && npm run lint:ts && npm run lint:scss"
+    "build": "npm run clean && webpack --config ./build/webpack/prod.js"
   },
   "author": "Bruno Calou <bcalou@stone.com.br>",
   "devDependencies": {

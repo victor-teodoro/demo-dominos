@@ -6,19 +6,12 @@
 	width: 100%;
 	heigth: 100%;
     }
-    .input-div {
-	margin: -207px 0px 0px 8px;       
-	position: absolute;
-    }
     .button-div {
-	margin: -180px 0px 0px 10px;       
+	margin: -300px 0px 0px 10px;       
 	position: absolute;
     }
     .button {
 	width: 220px;
-	opacity: 0;
-    }
-    input { 
-	text-align: center; 
+	opacity: 100;
     }
 }
