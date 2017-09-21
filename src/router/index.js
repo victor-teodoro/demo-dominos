@@ -10,7 +10,7 @@ export default new MbRouter({
     routes: [
 	{
 	    path: '/',
-	    component: Welcome
+	    component: Payment
 	},
 	{
 	    path: '/intro',

@@ -1,10 +1,6 @@
 @import '../../styles/custom-variables';
 
 .payment {
-    height: 300px;
-    padding-top: 80px;
-    background-color: #AAA;
-
     h1 {
 	margin-top: 20px;
 	color: #fff;
@@ -16,11 +12,16 @@
 	margin-left: 60px;
     }
 
-    img {
-	display: block;
-	width: 162px;
-	height: 97px;
-	margin: auto;
+    .welcome {
+	margin: -300px 0px 0px 10px;       
+	position: absolute;
+	text-align: center;
+    }
+
+    .handshake-button {
+	margin: -400px 0px 0px 0px;
+	width: 220px;
+	background: green;
     }
 
     .filipeta {
@@ -28,5 +29,11 @@
 	width: 200px;
 	height: 200px;
 	margin: auto;
+    }
+
+    .background-img {
+	margin-left: -20px;
+	width: 260px;
+	heigth: 320px;
     }
 }
