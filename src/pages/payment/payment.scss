@@ -1,34 +1,46 @@
 @import '../../styles/custom-variables';
 
 .payment {
-    h1 {
-	margin-top: 20px;
-	color: #fff;
-	font-size: 20px;
-	text-align: center;
-    }
-
-    h4 {
-	margin-left: 60px;
-    }
-
-    .welcome {
-	margin: -300px 0px 0px 10px;       
-	position: absolute;
-	text-align: center;
-    }
-
-    .handshake-button {
-	margin: -400px 0px 0px 0px;
+    .authorize-button {
 	width: 220px;
-	background: green;
+	background: "#a4dae7";
+    }
+
+    .valor-do-pedido {
+	margin: -400px 0px 0px 0px;
+	color: white;
     }
 
     .filipeta {
 	display: block;
 	width: 200px;
-	height: 200px;
-	margin: auto;
+	height: 150px;
+	margin: 0px 0px 0px 60px;
+    }
+
+    .border-bottom {
+	border-bottom: 2px solid black;
+    }
+    
+    .border-full {
+	border: 2px solid black;
+    }
+
+    .black-background {
+	background-color: black;
+	color: white;
+    }
+
+    .text-center {
+	text-align: center;
+    }
+
+    .bold {
+	text-weight: bold;
+    }
+
+    .transparent {
+	opacity: 0;
     }
 
     .background-img {

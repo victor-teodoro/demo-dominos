@@ -1,12 +1,68 @@
 <div class="payment">
     <div class="container">
 	<mb-image mb-src="./assets/validation_ambev.png" class="background-img"></mb-image>
-	<mb-button class="handshake-button" ref="handshake-button">Handshake</mb-button>
+	<div id="valor-do-pedido" class="valor-do-pedido">
+	    <h5 class="text-center">Valor do pedido:</h5>
+	    <h5 class="text-center">R$ 2394,00</h5>
+	    <mb-button class="authorize-button" id="authorize-button">Autoriza a Ambev?</mb-button>
+	</div>
     </div>
 
-    <mb-print-area ref="print-area">
-	<mb-image mb-src="./assets/logo-eguana.png" class="filipeta"></mb-image>
-	<h4>Compra feita com sucesso!</h4>
-	<mb-image mb-src="./assets/qr.jpg" class="filipeta"></mb-image>
+    <mb-print-area ref="filipeta-pedido">
+	<mb-image mb-src="./assets/logo_parceiro_ambev.png" class="filipeta"></mb-image>
+	<div class="border-bottom text-center">
+	    <h2 class="black-background bold">PEDIDO PENDENTE</h2>
+	</div>
+	<div class="border-bottom text-center">
+	    <h2 class="bold">CONFIRME NA SUA MÁQUINA!</h2>
+	    <h2 class="bold">ID: 7635625</h2>
+	</div>
+	<div class="border-bottom text-center">
+	    <h4><span class="bold">Valor:</span> R$ 2394,00</h4>
+	    <h4><span class="bold">Para mais informações, acesse:</span></h4>
+	    <h4 class="border-full"><span class="bold">portal.stone.com.br</span></h4>
+	</div>
+	<div class="border-bottom text-center">
+	    <h4><span class="bold">CNPJ:</span> 28.958.742/0001-43</h4>
+	    <h4><span class="bold">Local:</span> Bar do Juarez</h4>
+	</div>
+    </mb-print-area>
+    <mb-print-area ref="filipeta-parceiro">
+	<mb-image mb-src="./assets/logo_parceiro_ambev.png" class="filipeta"></mb-image>
+	<div class="border-bottom text-center">
+	    <h2 class="black-background bold">VIA PARCEIRO AMBEV</h2>
+	</div>
+	<div class="border-bottom text-center">
+	    <h2 class="bold">OPERAÇÃO BEM-SUCEDIDA!</h2>
+	    <h2 class="bold">ID: 7635625</h2>
+	</div>
+	<div class="border-bottom text-center">
+	    <h4><span class="bold">Valor:</span> R$ 2394,00</h4>
+	    <h4><span class="bold">Para mais informações, acesse:</span></h4>
+	    <h4 class="border-full"><span class="bold">portal.stone.com.br</span></h4>
+	</div>
+	<div class="border-bottom text-center">
+	    <h4><span class="bold">CNPJ:</span> 28.958.742/0001-43</h4>
+	    <h4><span class="bold">Local:</span> Bar do Juarez</h4>
+	</div>
+    </mb-print-area>
+    <mb-print-area ref="filipeta-ambev">
+	<mb-image mb-src="./assets/logo_parceiro_ambev.png" class="filipeta"></mb-image>
+	<div class="border-bottom text-center">
+	    <h2 class="black-background bold">VIA AMBEV</h2>
+	</div>
+	<div class="border-bottom text-center">
+	    <h2 class="bold">OPERAÇÃO BEM-SUCEDIDA!</h2>
+	    <h2 class="bold">ID: 7635625</h2>
+	</div>
+	<div class="border-bottom text-center">
+	    <h4><span class="bold">Valor:</span> R$ 2394,00</h4>
+	    <h4><span class="bold">Para mais informações, acesse:</span></h4>
+	    <h4 class="border-full"><span class="bold">portal.stone.com.br</span></h4>
+	</div>
+	<div class="border-bottom text-center">
+	    <h4><span class="bold">CNPJ:</span> 28.958.742/0001-43</h4>
+	    <h4><span class="bold">Local:</span> Bar do Juarez</h4>
+	</div>
     </mb-print-area>
 </div>

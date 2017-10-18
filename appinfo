@@ -1,0 +1,8 @@
+[app]
+id=MAINAPP
+name=StoneMambaLoader
+bin=StoneMambaLoader
+artwork=
+desc=PAX POS Application
+vender=PAX
+version=1.8.0
